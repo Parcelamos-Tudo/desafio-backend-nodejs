@@ -10,7 +10,7 @@ describe("Desafio 2 - Bank", () => {
     expect(resp).toBe(2574.61);
   });
 
-  it.skip("Teste 2 - Aprove a operação de pagamento se, e somente se, o usuário enviar senha correta e o valor for menor ou igual ao saldo da conta", () => {
+  it.skip("Teste 2 - Aprove a operação de pagamento se o usuário enviar senha correta e o valor for menor ou igual que o saldo da conta", () => {
     const info = {
       password: "UXQxLrSjZ",
       amount: 1580,
@@ -22,7 +22,7 @@ describe("Desafio 2 - Bank", () => {
     expect(resp.success).toBeTruthy();
   });
 
-  it.skip("Teste 3 - Reprove a operação de pagamento se, e somente se, o usuário enviar senha incorreta ou o valor for maior ao saldo da conta", () => {
+  it.skip("Teste 3 - Reprove a operação de pagamento se o usuário enviar senha incorreta ou o valor for maior que o saldo da conta", () => {
     const info = {
       password: "cMQ0XHui9WQt",
       amount: 4000,
@@ -35,7 +35,7 @@ describe("Desafio 2 - Bank", () => {
     expect(resp.message).toBe("Saldo insuficiente");
   });
 
-  it.skip("Teste 4 - Reprove a operação de pagamento se, e somente se, o usuário enviar senha incorreta ou o valor for maior ao saldo da conta", () => {
+  it.skip("Teste 4 - Reprove a operação de pagamento se o usuário enviar senha incorreta ou o valor for maior que o saldo da conta", () => {
     const info = {
       password: "apsoAOKDaposdKA",
       amount: 3000,
